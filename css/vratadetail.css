@@ -1,0 +1,354 @@
+/* =========================
+   VRATA DETAIL PAGE
+========================= */
+
+.vrata-detail {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 70px 40px 80px;
+
+    box-sizing: border-box;
+
+    color: #2B2418;
+}
+
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+#back-to-vrata {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    margin-bottom: 30px;
+    padding: 11px 20px;
+
+    border: 1px solid rgba(184, 145, 57, 0.65);
+    border-radius: 30px;
+
+    background: rgba(240, 238, 235, 0);
+
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+
+    color: #5A4215;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 0 5px rgba(219, 176, 46, 0.6),
+        0 0 12px rgba(231, 186, 49, 0.35);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+
+/* Back Icon */
+
+#back-to-vrata i {
+    font-size: 13px;
+
+    transition: transform 0.25s ease;
+}
+
+
+/* Back Button Hover */
+
+#back-to-vrata:hover {
+    background: rgba(238, 223, 177, 0.85);
+
+    transform: translateX(-3px);
+
+    box-shadow:
+        0 0 7px rgba(233, 201, 107, 0.9),
+        0 0 18px rgba(233, 201, 107, 0.55),
+        0 0 28px rgba(233, 201, 107, 0.3);
+}
+
+
+#back-to-vrata:hover i {
+    transform: translateX(-4px);
+}
+
+
+/* =========================
+   MAIN IMAGE
+========================= */
+
+.vrata-detail-main-image {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    height: auto;
+
+    margin: 0 auto 35px;
+
+    border-radius: 16px;
+
+    object-fit: cover;
+
+    border: 1px solid rgba(201, 154, 40, 0.55);
+
+    box-shadow:
+        0 0 7px rgba(233, 201, 107, 0.55),
+        0 0 18px rgba(233, 201, 107, 0.3);
+}
+
+
+/* =========================
+   MAIN TITLE
+========================= */
+
+.vrata-detail h1 {
+    margin: 0 0 10px;
+
+    color: #daa62d;
+
+    font-size: 38px;
+    line-height: 1.2;
+
+    font-weight: 700;
+
+    text-align: left;
+
+    text-shadow:
+        0 0 5px rgba(233, 201, 107, 0.35);
+}
+
+.firstname {
+
+    color:#000000;
+
+}
+
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+
+.vrata-detail h2 {
+    margin: 40px 0 8px;
+
+    color: #6B4F16;
+
+    font-size: 25px;
+    line-height: 1.3;
+
+    font-weight: 700;
+
+    text-align: left;
+}
+
+
+/* =========================
+   PARAGRAPH
+========================= */
+
+.vrata-detail p {
+    margin: 0 0 18px;
+
+    color: #2B2418;
+
+    font-size: 16px;
+    line-height: 1.8;
+
+    text-align: justify;
+}
+
+
+/* =========================
+   LIST
+========================= */
+
+.vrata-detail ul {
+    margin: 10px 0 25px;
+
+    padding-left: 25px;
+}
+
+
+.vrata-detail li {
+    margin-bottom: 10px;
+
+    color: #2B2418;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   IMAGES INSIDE ARTICLE
+========================= */
+
+.vrata-detail-image {
+    display: block;
+
+    width: auto;
+    max-width: 85%;
+
+    max-height: 550px;
+
+    height: auto;
+
+    margin: 30px auto;
+
+    border-radius: 14px;
+
+    object-fit: contain;
+
+    border: 1px solid rgba(201, 154, 40, 0.5);
+
+    box-shadow:
+        0 0 6px rgba(233, 201, 107, 0.5),
+        0 0 16px rgba(233, 201, 107, 0.25);
+}
+
+
+/* =========================
+   MEDIUM SCREEN
+========================= */
+
+@media (max-width: 1000px) {
+
+    .vrata-detail {
+        max-width: 100%;
+
+        padding: 105px 25px 60px;
+    }
+
+
+    #back-to-vrata {
+        margin-bottom: 25px;
+    }
+
+
+    .vrata-detail h1 {
+        font-size: 32px;
+    }
+
+
+    .vrata-detail h2 {
+        font-size: 23px;
+    }
+
+
+    .vrata-detail p,
+    .vrata-detail li {
+        font-size: 15px;
+    }
+
+
+    .vrata-detail-image {
+        max-width: 90%;
+    }
+
+}
+
+
+/* =========================
+   SMALL SCREEN
+========================= */
+
+@media (max-width: 700px) {
+
+    .vrata-detail {
+        width: 100%;
+
+        padding: 104px 15px 50px;
+    }
+
+
+    /* Back Button */
+
+    #back-to-vrata {
+        margin-bottom: 20px;
+
+        padding: 9px 16px;
+
+        font-size: 13px;
+    }
+
+
+    /* Main Image */
+
+    .vrata-detail-main-image {
+        margin-bottom: 25px;
+
+        border-radius: 12px;
+    }
+
+
+    /* Main Title */
+
+    .vrata-detail h1 {
+        margin-bottom: 8px;
+
+        font-size: 28px;
+    }
+
+
+    /* Section Heading */
+
+    .vrata-detail h2 {
+        margin-top: 30px;
+        margin-bottom: 6px;
+
+        font-size: 21px;
+    }
+
+
+    /* Paragraph */
+
+    .vrata-detail p {
+        margin-bottom: 15px;
+
+        font-size: 14px;
+        line-height: 1.7;
+
+        text-align: left;
+    }
+
+
+    /* List */
+
+    .vrata-detail ul {
+        padding-left: 20px;
+    }
+
+
+    .vrata-detail li {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    /* Article Image */
+
+    .vrata-detail-image {
+        width: 100%;
+        max-width: 100%;
+
+        max-height: none;
+
+        margin: 25px auto;
+
+        border-radius: 10px;
+    }
+
+}

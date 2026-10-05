@@ -1,0 +1,1000 @@
+/* =========================
+   VRATA BANNER
+========================= */
+
+.vrata-banner {
+    position: relative;
+
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto 60px;
+    padding: 0;
+}
+
+
+/* =========================
+   BANNER IMAGE
+========================= */
+
+.vrata-banner > img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+
+    border-radius: 0;
+    border: none;
+}
+
+
+/* =========================
+   BANNER TEXT BOX
+========================= */
+
+.vrata-banner-text {
+    position: absolute;
+
+    top: 12px;
+    right: 12px;
+
+    width: 50%;
+    height: 40%;
+
+    box-sizing: border-box;
+
+    padding: 18px 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    text-align: left;
+
+    background: rgba(255, 255, 255, 0.7);
+
+    border: 1px solid rgba(201, 154, 40, 0.45);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 3px 12px rgba(74, 58, 32, 0.08),
+        0 0 12px rgba(233, 201, 107, 0.12);
+
+    overflow: hidden;
+
+    backdrop-filter: blur(5px);
+
+    -webkit-backdrop-filter: blur(5px);
+}
+
+
+/* =========================
+   BANNER HEADING
+========================= */
+
+.vrata-banner-text h1 {
+    width: 100%;
+
+    margin: 0 0 10px;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    text-align: left;
+
+    font-size: 24px;
+    line-height: 1.2;
+
+    font-weight: 700;
+
+    color: #4A3A20;
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    text-shadow:
+        0 0 5px rgba(255, 215, 90, 0.95),
+        0 0 12px rgba(233, 201, 107, 0.85),
+        0 0 22px rgba(233, 201, 107, 0.65);
+}
+
+
+/* =========================
+   BANNER DESCRIPTION
+========================= */
+
+.vrata-banner-text p {
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    text-align: left;
+
+    font-size: 15px;
+    line-height: 1.5;
+
+    font-weight: 700;
+
+    color: #4A3A20;
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+
+/* =========================
+   PREVIOUS / TODAY / NEXT
+========================= */
+
+.vrata-highlights {
+    position: absolute;
+
+    left: 50%;
+    bottom: 25px;
+
+    width: 50%;
+    height: 48%;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+
+    display: grid;
+
+    grid-template-columns:
+        0.82fr 1fr 0.82fr;
+
+    align-items: center;
+
+    gap: 10px;
+
+    z-index: 6;
+}
+
+
+/* =========================
+   ALL HIGHLIGHT CARDS
+========================= */
+
+.vrata-highlight {
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 3 / 4;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 14px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    color: #F7F0D0;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    border: 1px solid rgba(201, 154, 40, 0.45);
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 3px 12px rgba(74, 58, 32, 0.08),
+        0 0 12px rgba(233, 201, 107, 0.12);
+
+    overflow: hidden;
+
+    backdrop-filter: blur(5px);
+
+    -webkit-backdrop-filter: blur(5px);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* =========================
+   NORMAL CARD POSITIONS
+========================= */
+
+.vrata-highlight:nth-child(1) {
+    z-index: 2;
+
+    transform: translateX(10px);
+}
+
+
+.vrata-highlight:nth-child(2) {
+    z-index: 3;
+
+    transform: translateY(0);
+}
+
+
+.vrata-highlight:nth-child(3) {
+    z-index: 2;
+
+    transform: translateX(-10px);
+}
+
+
+/* =========================
+   FAST CARD ENTRY ANIMATION
+========================= */
+
+.vrata-highlight {
+    opacity: 0;
+}
+
+/* Previous — অনেক দূর বাম থেকে */
+.vrata-highlight:nth-child(1) {
+    z-index: 2;
+    animation: vrataFromLeft 0.45s cubic-bezier(0.2, 0.8, 0.3, 1) forwards;
+}
+
+/* Today — অনেক উপর থেকে */
+.vrata-highlight:nth-child(2) {
+    z-index: 3;
+    animation: vrataFromTop 0.45s cubic-bezier(0.2, 0.8, 0.3, 1) 0.08s forwards;
+}
+
+/* Next — অনেক দূর ডান থেকে */
+.vrata-highlight:nth-child(3) {
+    z-index: 2;
+    animation: vrataFromRight 0.45s cubic-bezier(0.2, 0.8, 0.3, 1) 0.16s forwards;
+}
+
+
+/* Left → Center */
+@keyframes vrataFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(10px);
+    }
+}
+
+
+/* Top → Center */
+@keyframes vrataFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-500px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Right → Center */
+@keyframes vrataFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(500px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-10px);
+    }
+}
+
+
+/* =========================
+   CARD HOVER
+========================= */
+
+.vrata-highlight:hover {
+    z-index: 10;
+
+    transform:
+        translateY(-5px)
+        scale(1.03);
+
+    box-shadow:
+        0 0 8px rgba(233, 201, 107, 1),
+        0 0 18px rgba(233, 201, 107, 0.8),
+        0 0 32px rgba(233, 201, 107, 0.55);
+}
+
+
+/* =========================
+   CARD HEADING
+========================= */
+
+.vrata-highlight h2 {
+    margin: 0 0 10px;
+
+    font-size: 15px;
+    line-height: 1;
+
+    color: #4A3A20;
+
+    text-shadow:
+        0 0 5px rgba(233, 201, 107, 0.7);
+}
+
+
+/* =========================
+   CARD DATE
+========================= */
+
+.vrata-highlight .vrata-date {
+    margin: 0 0 4px;
+
+    font-size: 11px;
+
+    color: #4A3A20;
+}
+
+
+/* =========================
+   VRATA NAME
+========================= */
+
+.vrata-highlight .vrata-name {
+    margin: 0 0 4px;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    color: #4A3A20;
+}
+
+
+/* =========================
+   SEE MORE
+========================= */
+
+.see-more {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    color: #4A3A20;
+}
+
+
+.see-more i {
+    font-size: 11px;
+}
+
+
+/* ========================= 
+   VRATA LIST 
+========================= */ 
+ 
+.vrata-list { 
+    width: 100%; 
+    max-width: 1200px; 
+ 
+    margin: 0 auto 70px; 
+ 
+    padding: 0 40px; 
+ 
+    box-sizing: border-box; 
+ 
+    display: grid; 
+ 
+    grid-template-columns: repeat(3, 1fr); 
+ 
+    gap: 25px; 
+} 
+ 
+ 
+/* ========================= 
+   VRATA CARD 
+========================= */ 
+ 
+.vrata-card { 
+    position: relative; 
+ 
+    width: 100%; 
+ 
+    aspect-ratio: 13 / 4; 
+ 
+    overflow: hidden; 
+ 
+    background: rgba(255, 255, 255, 0.82);
+
+    border: 1px solid rgba(201, 154, 40, 0.45);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 3px 12px rgba(74, 58, 32, 0.08),
+        0 0 12px rgba(233, 201, 107, 0.12);
+
+    overflow: hidden;
+
+    backdrop-filter: blur(5px);
+
+    -webkit-backdrop-filter: blur(5px);
+ 
+    transition: 
+        transform 0.25s ease, 
+        box-shadow 0.25s ease; 
+} 
+ 
+ 
+/* ========================= 
+   CARD LINK 
+========================= */ 
+ 
+.vrata-card > a { 
+    position: relative; 
+ 
+    display: block; 
+ 
+    width: 100%; 
+    height: 100%; 
+ 
+    padding: 0; 
+ 
+    text-decoration: none; 
+ 
+    color: #2B2418; 
+ 
+    overflow: hidden; 
+} 
+ 
+ 
+ 
+ 
+/* ========================= 
+   LIGHT GOLDEN OVERLAY 
+========================= */ 
+ 
+.vrata-card-overlay { 
+    position: absolute; 
+ 
+    inset: 0; 
+ 
+    z-index: 2; 
+ 
+    background: 
+        rgba(252, 252, 249, 0.62); 
+ 
+    backdrop-filter: blur(3px); 
+    -webkit-backdrop-filter: blur(3px); 
+} 
+ 
+ 
+/* ========================= 
+   CARD CONTENT 
+========================= */ 
+ 
+.vrata-card-content { 
+    position: absolute; 
+ 
+    left: 25px; 
+    top: 50%; 
+ 
+    transform: translateY(-50%); 
+ 
+    z-index: 3; 
+ 
+    text-align: left; 
+} 
+ 
+ 
+/* ========================= 
+   DATE 
+========================= */ 
+ 
+.vrata-card .vrata-date { 
+    margin: 0 0 8px; 
+ 
+    display: flex; 
+ 
+    align-items: center; 
+ 
+    gap: 8px; 
+ 
+    font-size: 18px; 
+ 
+    color: #2B2418; 
+ 
+    text-align: left; 
+} 
+ 
+ 
+/* Calendar Icon */ 
+ 
+.vrata-card .vrata-date i { 
+    font-size: 25px; 
+ 
+    color: #6B4F16; 
+ 
+    text-shadow: 
+        0 0 5px rgba(233, 201, 107, 0.9), 
+        0 0 10px rgba(233, 201, 107, 0.6); 
+} 
+ 
+ 
+/* ========================= 
+   VRATA NAME 
+========================= */ 
+ 
+.vrata-card h2 { 
+    margin: 0 0 8px; 
+ 
+    font-size: 23px; 
+ 
+    font-weight: 700; 
+ 
+    color: #2B2418; 
+ 
+    text-align: left; 
+ 
+    text-shadow: 
+        0 0 5px rgba(233, 201, 107, 0.8), 
+        0 0 12px rgba(233, 201, 107, 0.55); 
+} 
+ 
+ 
+/* ========================= 
+   PARANA TIME 
+========================= */ 
+ 
+.vrata-card .parana-time { 
+    margin: 0; 
+ 
+    display: flex; 
+ 
+    align-items: center; 
+ 
+    gap: 8px; 
+ 
+    font-size: 14px; 
+ 
+    color: #2B2418; 
+ 
+    text-align: left; 
+} 
+ 
+ 
+/* Clock Icon */ 
+ 
+.vrata-card .parana-time i { 
+    font-size: 15px; 
+ 
+    color: #6B4F16; 
+ 
+    text-shadow: 
+        0 0 5px rgba(233, 201, 107, 0.9), 
+        0 0 10px rgba(233, 201, 107, 0.6); 
+} 
+ 
+ 
+/* ========================= 
+   READ MORE 
+========================= */ 
+ 
+.read-more { 
+    position: absolute; 
+ 
+    top: 2px; 
+    right: 2px; 
+ 
+    z-index: 4; 
+ 
+    display: flex; 
+ 
+    align-items: center; 
+ 
+    gap: 8px; 
+ 
+    font-size: 11px; 
+ 
+    font-weight: 700; 
+ 
+    color: #2B2418; 
+ 
+    text-shadow: 
+        0 0 5px rgba(233, 201, 107, 0.9), 
+        0 0 12px rgba(233, 201, 107, 0.6); 
+} 
+ 
+ 
+/* Read More Arrow */ 
+ 
+.read-more i { 
+    display: flex; 
+ 
+    align-items: center; 
+    justify-content: center; 
+ 
+    width: 20px; 
+    height: 20px; 
+ 
+    border: 1px solid rgba(107, 79, 22, 0.9); 
+ 
+    border-radius: 50%; 
+ 
+    font-size: 18px; 
+ 
+    box-shadow: 
+        0 0 5px rgba(233, 201, 107, 0.8), 
+        0 0 10px rgba(233, 201, 107, 0.5); 
+}
+
+
+/* =========================
+   HOVER
+========================= */
+
+.vrata-card:hover {
+    transform: scale(1.02);
+
+    box-shadow:
+        0 0 8px rgba(233, 201, 107, 1),
+        0 0 18px rgba(233, 201, 107, 0.8),
+        0 0 35px rgba(233, 201, 107, 0.55);
+}
+
+
+.vrata-card:hover .vrata-card-bg {
+    transform: scale(1.04);
+}
+
+
+.vrata-card-bg {
+    transition: transform 0.4s ease;
+}
+
+
+@media (max-width: 1000px) {
+
+    .vrata-list {
+        grid-template-columns: repeat(2, 1fr);
+
+        padding: 0 25px;
+
+        gap: 20px;
+    }
+
+
+        .vrata-card .vrata-date {
+        margin-bottom: 2px;
+        font-size: 18px;
+        gap: 5px;
+    }
+
+    .vrata-card .vrata-date i {
+        font-size: 23px;
+    }
+
+    .vrata-card h2 {
+        margin-bottom: 2px;
+        font-size: 23px;
+    }
+
+    .vrata-card .parana-time {
+        font-size: 14px;
+        gap: 5px;
+    }
+
+    .vrata-card .parana-time i {
+        font-size: 14px;
+    }
+
+    .read-more {
+        top: 9px;
+        right: 10px;
+
+        gap: 5px;
+
+        font-size: 11px;
+    }
+
+    .read-more i {
+        width: 12px;
+        height: 12px;
+
+        font-size: 8px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    /* Banner */
+
+
+
+
+    /* Banner Image */
+
+    .vrata-banner > img {
+        width: 100%;
+
+        display: block;
+
+        border-radius: 0;
+
+        border: none;
+    }
+
+
+    /* Banner Text Box */
+
+    .vrata-banner-text {
+        top: 8px;
+
+        right: 8px;
+
+        width: 50%;
+
+        height: 45%;
+
+        padding: 10px 12px;
+
+        justify-content: center;
+
+        align-items: flex-start;
+
+        text-align: left;
+
+        border-radius: 10px;
+
+        overflow: hidden;
+
+        box-shadow:
+            0 0 5px
+            rgba(255, 215, 90, 0.95),
+
+            0 0 12px
+            rgba(233, 201, 107, 0.8),
+
+            0 0 22px
+            rgba(233, 201, 107, 0.6);
+    }
+
+
+    /* Mobile Heading */
+
+    .vrata-banner-text h1 {
+        width: 100%;
+
+        margin: 0 0 6px;
+
+        font-size: 14px;
+
+        line-height: 1;
+
+        text-align: left;
+    }
+
+
+    /* Mobile Description */
+
+    .vrata-banner-text p {
+        width: 100%;
+
+        margin: 0;
+
+        font-size: 9px;
+
+        line-height: 1.35;
+
+        text-align: left;
+    }
+
+
+    /* Highlight Area */
+
+    .vrata-highlights {
+        left: 50%;
+
+        bottom: 8px;
+
+        width: 50%;
+
+        height: 45%;
+
+        padding: 5px;
+
+        gap: 5px;
+    }
+
+
+    /* Mobile Highlight Card */
+
+    .vrata-highlight {
+        padding: 7px;
+
+        border-radius: 8px;
+
+        box-shadow:
+            0 0 4px
+            rgba(233, 201, 107, 0.8),
+
+            0 0 9px
+            rgba(233, 201, 107, 0.5);
+    }
+
+
+    /* Mobile Heading */
+
+    .vrata-highlight h2 {
+        margin-bottom: 1px;
+
+        font-size: 9px;
+
+        line-height: 1.1;
+    }
+
+
+    /* Mobile Date */
+
+    .vrata-highlight .vrata-date {
+        margin-bottom: 1px;
+
+        font-size: 8px;
+    }
+
+
+    /* Mobile Vrata Name */
+
+    .vrata-highlight .vrata-name {
+        margin-bottom: 1px;
+
+        font-size: 9px;
+
+        line-height: 1.1;
+    }
+
+
+    /* Mobile See More */
+
+    .see-more {
+        gap: 4px;
+
+        font-size: 7px;
+    }
+
+
+    .see-more i {
+        font-size: 8px;
+    }
+
+
+    /* =========================
+       MOBILE VRATA LIST
+    ========================= */
+
+        .vrata-list {
+        grid-template-columns: 1fr;
+
+        padding: 0 20px;
+
+        gap: 18px;
+    }
+
+
+    .vrata-card {
+        aspect-ratio: 13 / 4;
+
+        border-radius: 10px;
+    }
+
+    .vrata-card-content {
+        left: 14px;
+    }
+
+    .vrata-card .vrata-date {
+        margin-bottom: 2px;
+        font-size: 18px;
+        gap: 5px;
+    }
+
+    .vrata-card .vrata-date i {
+        font-size: 23px;
+    }
+
+    .vrata-card h2 {
+        margin-bottom: 2px;
+        font-size: 25px;
+    }
+
+    .vrata-card .parana-time {
+        font-size: 15px;
+        gap: 5px;
+    }
+
+    .vrata-card .parana-time i {
+        font-size: 16px;
+    }
+
+    .read-more {
+        top: 9px;
+        right: 10px;
+
+        gap: 5px;
+
+        font-size: 12px;
+    }
+
+    .read-more i {
+        width: 16px;
+        height: 16px;
+
+        font-size: 12px;
+    }
+
+}
+
+
+/* =========================
+   LARGE SCREEN CARD FONT SIZE
+========================= */
+
+@media (min-width: 1001px) {
+        .vrata-banner-text h1 {
+        font-size: 30px;
+    }
+
+    .vrata-banner-text p {
+        font-size: 21px;
+    }
+
+
+
+    .vrata-highlight h2 {
+        font-size: 22px;
+    }
+
+    .vrata-highlight .vrata-date {
+        font-size: 16px;
+    }
+
+    .vrata-highlight .vrata-name {
+        font-size: 22px;
+    }
+
+    .see-more {
+        font-size: 14px;
+    }
+
+    .see-more i {
+        font-size: 13px;
+    }
+
+}

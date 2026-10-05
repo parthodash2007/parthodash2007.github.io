@@ -1,0 +1,1744 @@
+/* =========================
+HOME PAGE
+========================= */
+
+.home-page {
+
+width: 100%;
+
+max-width: 1000px;
+
+margin: 0 auto ;
+
+padding: 0 0 60px;
+
+box-sizing: border-box;
+
+}
+
+/* =========================
+   HERO SLIDESHOW
+   16 : 9
+========================= */
+
+#hero {
+    width: 100%;
+    aspect-ratio: 2.5 / 1;
+    position: relative;
+    overflow: hidden;
+    margin: 90px auto 40px;
+    box-shadow: #bda37d 0px 6px 20px;
+}
+
+
+/* =========================
+   HERO CANVAS
+========================= */
+
+#hero-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Images are used by JavaScript */
+
+#hero-images {
+    display: none;
+}
+
+
+
+
+/* =========================
+WELCOME SECTION
+========================= */
+
+.welcome-section {
+
+width: 100%;
+
+margin: 0 0 55px;
+
+padding: 0;
+
+text-align: left;
+
+}
+
+.welcome-section h1 {
+
+margin: 0 0 22px;
+
+font-size: 32px;
+
+line-height: 1.3;
+
+font-weight: 700;
+
+}
+
+.welcome-first {
+
+color: #4A3A20;
+
+}
+
+.welcome-last {
+
+color: #CA9906;
+
+margin-left: 6px;
+
+}
+
+.welcome-section p {
+
+max-width: 850px;
+
+margin: 0 0 15px;
+
+color: #5A4728;
+
+font-size: 16px;
+
+line-height: 1.8;
+
+}
+
+
+
+
+/* =========================
+HOME FEATURE SECTIONS
+========================= */
+
+.home-feature-section {
+
+width: 100%;
+
+margin: 0 0 40px;
+
+text-align: left;
+
+}
+
+.home-feature-section a {
+
+display: block;
+
+color: inherit;
+
+text-decoration: none;
+
+}
+
+.home-feature-section h2 {
+
+margin: 0 0 8px;
+
+color: #4A3A20;
+
+font-size: 25px;
+
+line-height: 1.3;
+
+font-weight: 700;
+
+}
+
+.home-feature-section p {
+
+margin: 0;
+
+color: #6A5735;
+
+font-size: 15px;
+
+line-height: 1.7;
+
+}
+
+/* =========================
+   UPCOMING VRATAS
+========================= */
+
+.upcoming-vrata-section {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+    box-sizing: border-box;
+
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.upcoming-vrata-section > h2 {
+    margin: 0 0 10px;
+    color: #4A3A20;
+    font-size: 30px;
+    line-height: 1.3;
+}
+
+.upcoming-vrata-section > h2 span:first-child {
+    color: #4A3A20;
+}
+
+.upcoming-vrata-section .welcome-last {
+    color: #CA9906;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.upcoming-vrata-intro {
+    margin: 0 0 25px;
+    color: #5A4728;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   VRATA SLIDER WRAPPER
+========================= */
+
+.home-vrata-wrapper {
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   VRATA SLIDER
+========================= */
+
+.home-vrata-slider {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: nowrap;
+
+    gap: 20px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;
+
+    padding: 5px 2px 15px;
+
+    box-sizing: border-box;
+
+    scroll-snap-type: x proximity;
+}
+
+.home-vrata-slider::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =========================
+   VRATA CARD
+========================= */
+
+.home-vrata-slider .vrata-card,
+.home-vrata-slider .vrata-list-card {
+
+    flex: 0 0 calc(
+        (100% - 80px) / 5
+    );
+
+    aspect-ratio: 3 / 4;
+
+    position: relative;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    background:
+        rgba(255, 255, 255, 0.72);
+
+    border:
+        1px solid rgba(201, 154, 40, 0.45);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 3px 12px rgba(74, 58, 32, 0.10);
+
+    scroll-snap-align: start;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* =========================
+   CARD HOVER
+========================= */
+
+.home-vrata-slider .vrata-card:hover,
+.home-vrata-slider .vrata-list-card:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 7px 18px rgba(74, 58, 32, 0.16);
+}
+
+
+/* =========================
+   CARD LINK
+========================= */
+
+.home-vrata-slider .vrata-card > a,
+.home-vrata-slider .vrata-list-card > a {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 15px;
+
+    box-sizing: border-box;
+
+    color: inherit;
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   VRATA CONTENT
+========================= */
+
+.home-vrata-slider .vrata-card-content {
+
+    padding: 0;
+
+    color: #4A3A20;
+}
+
+
+.home-vrata-slider .vrata-date {
+
+    margin: 5px 0 10px;
+
+    color: #8B6A20;
+
+    font-size: 15px;
+
+    line-height: 1.3;
+}
+
+
+.home-vrata-slider .vrata-card-content h2 {
+
+    margin: 0 0 12px;
+
+    color: #4A3A20;
+
+    font-size: 18px;
+
+    line-height: 1.3;
+}
+
+
+.home-vrata-slider .parana-time {
+
+    margin: 0;
+
+    color: #6A5737;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   READ MORE
+========================= */
+
+.home-vrata-slider .read-more {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    width: 100%;
+
+    color: #A77A05;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   SEE VRATA LIST CARD
+========================= */
+
+.vrata-list-card {
+
+    background:
+        rgba(238, 223, 177, 0.45) !important;
+}
+
+
+.vrata-list-card-content {
+
+    width: 100%;
+
+    text-align: center;
+
+    margin: auto;
+}
+
+
+.vrata-list-card-content > i {
+
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: #CA9906;
+
+    font-size: 35px;
+}
+
+
+.vrata-list-card-content h2 {
+
+    margin: 0 0 12px;
+
+    color: #4A3A20;
+
+    font-size: 19px;
+
+    line-height: 1.35;
+}
+
+
+.vrata-list-card-content p {
+
+    margin: 0 0 20px;
+
+    color: #6A5737;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+
+.vrata-list-card-content span {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #A77A05;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   SCROLL BUTTON
+========================= */
+
+.vrata-scroll-btn {
+
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    z-index: 10;
+
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(201, 166, 85, 0.65);
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.90);
+
+    color: #5A4215;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 3px 10px rgba(74, 58, 32, 0.15);
+
+    backdrop-filter: blur(5px);
+
+    -webkit-backdrop-filter: blur(5px);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.vrata-scroll-btn:hover {
+
+    background:
+        rgba(238, 223, 177, 0.95);
+
+    box-shadow:
+        0 5px 14px rgba(74, 58, 32, 0.20);
+}
+
+
+.vrata-scroll-btn:active {
+
+    transform:
+        translateY(-50%) scale(0.92);
+}
+
+
+.vrata-scroll-left {
+
+    left: -18px;
+}
+
+
+.vrata-scroll-right {
+
+    right: -18px;
+}
+
+
+/* =========================
+FEATURE HOVER
+========================= */
+
+.home-feature-section a h2 {
+
+color: #CA9906;
+
+}
+
+
+
+
+/* =========================
+UPCOMING EVENTS IFRAME
+========================= */
+
+.home-feature-section iframe {
+
+display: block;
+
+width: 100%;
+
+height: 300px;
+
+margin-top: 20px;
+
+border: none;
+
+}
+
+
+
+
+/* =========================
+MEDIUM SCREEN
+========================= */
+
+@media (max-width: 1000px) {
+
+.home-page {
+
+    max-width: 760px;
+
+    padding: 0 30px 60px;
+}
+
+#hero {
+    margin-top: 100px;
+}
+
+
+.welcome-section {
+
+    margin-bottom: 45px;
+}
+
+
+.welcome-section h1 {
+
+    font-size: 30px;
+}
+
+
+.welcome-section p {
+
+    font-size: 15px;
+
+    line-height: 1.75;
+}
+
+
+.home-feature-section {
+
+    margin-bottom: 35px;
+}
+
+
+.home-feature-section h2 {
+
+    font-size: 23px;
+}
+
+
+   .home-vrata-slider {
+
+        gap: 18px;
+
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+
+    .home-vrata-slider .vrata-card,
+    .home-vrata-slider .vrata-list-card {
+
+        flex: 0 0 calc(
+            (100% - 54px) / 4
+        );
+    }
+
+
+    .vrata-scroll-btn {
+
+        width: 34px;
+        height: 34px;
+    }
+
+
+    .vrata-scroll-left {
+
+        left: -8px;
+    }
+
+
+    .vrata-scroll-right {
+
+        right: -8px;
+    }
+
+}
+
+
+
+
+/* =========================
+SMALL SCREEN
+========================= */
+
+@media (max-width: 700px) {
+
+.home-page {
+
+    width: 100%;
+
+    padding: 0 15px 50px;
+}
+
+#hero {
+    margin-top: 75px;
+}
+
+.welcome-section {
+
+    margin-bottom: 35px;
+
+    text-align: left;
+}
+
+
+.welcome-section h1 {
+
+    font-size: 27px;
+
+    line-height: 1.3;
+
+    margin-bottom: 4px;
+}
+
+
+.welcome-first,
+.welcome-last {
+
+    margin-left: 0;
+}
+
+
+.welcome-section p {
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 5px;
+}
+
+
+.home-feature-section {
+
+    margin-bottom: 30px;
+
+    text-align: left;
+}
+
+
+.home-feature-section h2 {
+
+    font-size: 21px;
+}
+
+
+.home-feature-section p {
+
+    font-size: 14px;
+
+    line-height: 1.65;
+}
+
+
+.home-feature-section iframe {
+
+    height: 250px;
+
+    margin-top: 15px;
+}
+
+    .upcoming-vrata-section {
+
+        width: 100%;
+
+        padding:
+            30px 15px;
+    }
+
+
+    .upcoming-vrata-section > h2 {
+
+        font-size: 27px;
+    }
+
+
+    .home-vrata-slider {
+
+        gap: 12px;
+
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+
+    .home-vrata-slider .vrata-card,
+    .home-vrata-slider .vrata-list-card {
+
+        flex: 0 0 calc(
+            (100% - 24px) / 3
+        );
+
+        border-radius: 18px;
+    }
+
+
+    .home-vrata-slider .vrata-card > a,
+    .home-vrata-slider .vrata-list-card > a {
+
+        padding: 10px;
+    }
+
+
+    .home-vrata-slider .vrata-date{
+        
+        font-size: 10px;
+
+        margin-bottom: 4px;
+    }
+    .home-vrata-slider .parana-time {
+
+        font-size: 9px;
+    }
+
+
+    .home-vrata-slider .vrata-card-content h2 {
+
+        font-size: 14px;
+
+        line-height: 1;
+
+        margin-bottom: 4px;
+    }
+
+
+    .home-vrata-slider .read-more {
+
+        font-size: 9px;
+    }
+
+
+    .vrata-list-card-content > i {
+
+        font-size: 25px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .vrata-list-card-content h2 {
+
+        font-size: 12px;
+    }
+
+
+    .vrata-list-card-content p {
+
+        font-size: 9px;
+
+        line-height: 1.3;
+    }
+
+
+    .vrata-list-card-content span {
+
+        font-size: 9px;
+    }
+
+
+    .vrata-scroll-btn {
+
+        width: 30px;
+        height: 30px;
+
+        font-size: 11px;
+    }
+
+
+    .vrata-scroll-left {
+
+        left: -5px;
+    }
+
+
+    .vrata-scroll-right {
+
+        right: -5px;
+    }
+}
+
+
+/* =========================
+   READ BOOKS INTRO
+========================= */
+
+.read-books-intro {
+    margin: 0 0 12px;
+    color: #5A4728;
+    line-height: 1.7;
+}
+
+.read-books-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #B27A05;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.read-books-link i {
+    font-size: 12px;
+    transition: transform 0.25s ease;
+}
+
+.read-books-link:hover {
+    color: #8C6500;
+}
+
+.read-books-link:hover i {
+    transform: translateX(4px);
+}
+
+
+/* =========================
+   HOME BOOK WRAPPER
+========================= */
+
+.home-book-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+/* =========================
+   HOME BOOK SLIDER
+========================= */
+
+.home-book-slider {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+
+    grid-auto-columns:
+        calc((100% - 45px) / 4);
+
+    gap: 15px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;
+
+    padding: 8px 2px 18px;
+
+    box-sizing: border-box;
+}
+
+.home-book-slider::-webkit-scrollbar {
+    display: none;
+}
+
+
+.home-book-slider .home-book-card .book-info h2 {
+    margin: 0;
+    color: #4A3A20;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+
+/* =========================
+   HOME BOOK CARD
+========================= */
+
+.home-book-card {
+    min-width: 0;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.home-book-card img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+
+    box-shadow:
+        0 6px 16px rgba(74, 58, 32, 0.20);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.home-book-card:hover img {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 9px 20px rgba(74, 58, 32, 0.25);
+}
+
+
+/* =========================
+   BOOK NAME
+========================= */
+
+.home-book-info {
+    padding-top: 12px;
+
+    text-align: center;
+}
+
+.home-book-info h3 {
+    margin: 0;
+
+    color: #4A3A20;
+
+    font-size: 15px;
+    line-height: 1.4;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   SCROLL BUTTON
+========================= */
+
+.book-scroll-btn {
+    flex-shrink: 0;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(201, 166, 85, 0.65);
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.75);
+
+    color: #5A4215;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    box-shadow:
+        0 0 5px rgba(219, 176, 46, 0.45),
+        0 0 12px rgba(231, 186, 49, 0.20);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.book-scroll-btn:hover {
+    transform: scale(1.08);
+
+    background: rgba(238, 223, 177, 0.9);
+
+    box-shadow:
+        0 0 7px rgba(233, 201, 107, 0.7),
+        0 0 16px rgba(233, 201, 107, 0.35);
+}
+
+
+/* =========================
+   MEDIUM SCREEN
+   3 BOOKS
+========================= */
+
+@media (max-width: 1000px) {
+
+    .home-book-slider {
+        grid-auto-columns:
+            calc((100% - 30px) / 3);
+    }
+
+}
+
+
+/* =========================
+   SMALL SCREEN
+   2 BOOKS
+========================= */
+
+@media (max-width: 700px) {
+
+    .home-book-wrapper {
+        gap: 7px;
+    }
+
+    .home-book-slider {
+        grid-auto-columns:
+            calc((100% - 12px) / 2);
+
+        gap: 12px;
+
+        padding-bottom: 15px;
+    }
+
+    .book-scroll-btn {
+        width: 32px;
+        height: 32px;
+
+        font-size: 12px;
+    }
+
+    .home-book-info {
+        padding-top: 9px;
+    }
+
+    .home-book-info h3 {
+        font-size: 13px;
+    }
+
+}
+
+/* =========================
+   UPCOMING EVENTS
+========================= */
+
+.upcoming-events-section {
+    width: 100%;
+}
+
+
+/* =========================
+   EVENTS WRAPPER
+========================= */
+
+.home-events-wrapper {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/* =========================
+   EVENTS SLIDER
+========================= */
+
+.home-events-slider {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    display: flex;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;
+
+    gap: 0;
+
+    scroll-snap-type: x mandatory;
+
+    border: 1px solid rgba(201, 154, 40, 0.45);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 3px 12px rgba(74, 58, 32, 0.08),
+        0 0 12px rgba(233, 201, 107, 0.12);
+
+    overflow: hidden;
+
+    backdrop-filter: blur(5px);
+
+    -webkit-backdrop-filter: blur(5px);
+
+
+}
+
+
+.home-events-slider::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =========================
+   EVENT SLIDE
+========================= */
+
+.event-slide {
+    flex: 0 0 100%;
+
+    width: 100%;
+    height: 100%;
+
+    scroll-snap-align: start;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   EVENT IMAGE
+========================= */
+
+.event-slide img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+
+/* =========================
+   SCROLL BUTTONS
+========================= */
+
+.events-scroll-btn {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    z-index: 5;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(201, 166, 85, 0.65);
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.72);
+
+    color: #5A4215;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    box-shadow:
+        0 0 6px rgba(219, 176, 46, 0.45),
+        0 0 14px rgba(231, 186, 49, 0.25);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* LEFT */
+
+.events-scroll-left {
+    left: 12px;
+}
+
+
+/* RIGHT */
+
+.events-scroll-right {
+    right: 12px;
+}
+
+
+/* HOVER */
+
+.events-scroll-btn:hover {
+    transform:
+        translateY(-50%)
+        scale(1.05);
+
+    background:
+        rgba(238, 223, 177, 0.9);
+
+    box-shadow:
+        0 0 8px rgba(233, 201, 107, 0.8),
+        0 0 18px rgba(233, 201, 107, 0.4);
+}
+
+
+/* =========================
+   SMALL SCREEN
+========================= */
+
+@media (max-width: 700px) {
+
+    .home-events-wrapper {
+        margin-top: 15px;
+    }
+
+    .events-scroll-btn {
+        width: 32px;
+        height: 32px;
+
+        font-size: 12px;
+    }
+
+    .events-scroll-left {
+        left: 7px;
+    }
+
+    .events-scroll-right {
+        right: 7px;
+    }
+
+}
+
+
+/* =========================
+   HOME — BIOGRAPHIES
+========================= */
+
+.biographies-home-section {
+    width: 100%;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.biographies-intro {
+    margin: 0 0 25px;
+    color: #5A4728;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   SLIDER WRAPPER
+========================= */
+
+.home-biography-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+
+/* =========================
+   SLIDER
+========================= */
+
+.home-biography-slider {
+
+    width: 100%;
+
+    display: flex;
+
+    gap: 25px;
+
+    overflow-x: auto;
+    overflow-y: visible;
+
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;
+
+    padding:
+        10px 45px 25px;
+
+    box-sizing: border-box;
+}
+
+
+.home-biography-slider::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =========================
+   BIOGRAPHY CARD
+========================= */
+
+.home-biography-card {
+
+    flex: 0 0
+        calc((100% - 100px) / 5);
+
+    aspect-ratio: 3 / 4;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background: #eee;
+
+    box-shadow:
+        0 6px 20px rgba(74, 58, 32, 0.18);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* =========================
+   CARD HOVER
+========================= */
+
+.home-biography-card:hover {
+
+    transform: scale(1.03);
+
+    box-shadow:
+        0 10px 28px rgba(74, 58, 32, 0.25);
+}
+
+
+/* =========================
+   LINK
+========================= */
+
+.home-biography-card a {
+
+    display: block;
+
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    color: inherit;
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.home-biography-card img {
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   GOLDEN FADE
+========================= */
+
+.home-biography-card a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 58%;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(238, 223, 177, 0.98),
+            rgba(238, 223, 177, 0.70),
+            rgba(238, 223, 177, 0)
+        );
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   BIOGRAPHY NAME
+========================= */
+
+.home-biography-card .biography-name {
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 2;
+
+    padding:
+        22px 15px 8px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    color: #3F301A;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    line-height: 1.4;
+}
+
+
+/* =========================
+   SCROLL BUTTON
+========================= */
+
+.biography-scroll-btn {
+
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    z-index: 10;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border:
+        1px solid rgba(184, 145, 57, 0.65);
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.80);
+
+    color: #5A4215;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(6px);
+
+    -webkit-backdrop-filter: blur(6px);
+
+    box-shadow:
+        0 0 5px rgba(219, 176, 46, 0.6),
+        0 0 12px rgba(231, 186, 49, 0.35);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+
+.biography-scroll-left {
+    left: 3px;
+}
+
+
+.biography-scroll-right {
+    right: 3px;
+}
+
+
+.biography-scroll-btn:hover {
+
+    transform:
+        translateY(-50%)
+        scale(1.05);
+
+    background:
+        rgba(238, 223, 177, 0.90);
+}
+
+
+/* =========================
+   MEDIUM SCREEN
+   4 CARDS
+========================= */
+
+@media (max-width: 1100px) {
+
+    .home-biography-slider {
+
+        gap: 20px;
+
+        padding:
+            10px 35px 25px;
+    }
+
+
+    .home-biography-card {
+
+        flex: 0 0
+            calc((100% - 60px) / 4);
+    }
+
+
+    .home-biography-card .biography-name {
+
+        padding:
+            18px 8px 7px;
+
+        font-size: 14px;
+    }
+
+}
+
+
+/* =========================
+   SMALL SCREEN
+   3 CARDS
+========================= */
+
+@media (max-width: 700px) {
+
+    .home-biography-slider {
+
+        gap: 15px;
+
+        padding:
+            10px 25px 25px;
+    }
+
+
+    .home-biography-card {
+
+        flex: 0 0
+            calc((100% - 30px) / 3);
+
+        border-radius: 14px;
+    }
+
+
+    .home-biography-card .biography-name {
+
+        padding:
+            18px 8px 7px;
+
+        font-size: 11px;
+    }
+
+
+    .biography-scroll-btn {
+
+        width: 32px;
+        height: 32px;
+
+        font-size: 12px;
+    }
+
+}
+
+/* =========================
+DAILY ESSENTIAL MANTRAS
+========================= */
+
+.daily-mantras-section {
+text-align: left;
+}
+
+.daily-mantras-section h2 {
+margin-bottom: 10px;
+}
+
+.daily-mantras-intro {
+max-width: 850px;
+margin: 0 0 12px;
+color: #5A4728;
+font-size: 16px;
+line-height: 1.75;
+}
+
+.daily-mantras-note {
+max-width: 850px;
+margin: 0 0 22px;
+color: #765F38;
+font-size: 14px;
+line-height: 1.7;
+}
+
+.daily-mantras-link {
+display: inline-flex;
+align-items: center;
+gap: 8px;
+
+color: #5A4215;
+text-decoration: none;
+font-size: 14px;
+font-weight: 600;
+
+transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+
+}
+
+.daily-mantras-link i {
+font-size: 12px;
+transition: transform 0.25s ease;
+}
+
+.daily-mantras-link:hover {
+color: #B8860B;
+transform: translateX(2px);
+}
+
+.daily-mantras-link:hover i {
+transform: translateX(4px);
+}
+
+/* =========================
+SMALL SCREEN
+========================= */
+
+@media (max-width: 700px) {
+
+.daily-mantras-intro {
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.daily-mantras-note {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.daily-mantras-link {
+    font-size: 13px;
+}
+
+}

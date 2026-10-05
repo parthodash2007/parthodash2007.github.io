@@ -1,0 +1,306 @@
+/* =========================
+   BIOGRAPHIES PAGE
+========================= */
+
+main {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+
+/* =========================
+   PAGE TITLE
+========================= */
+
+main > h1 {
+
+    max-width: 1000px;
+
+    margin: 30px auto 40px;
+
+    padding: 0 70px;
+
+    box-sizing: border-box;
+
+    text-align: left;
+
+    font-size: 32px;
+    line-height: 1.3;
+
+    font-weight: 700;
+}
+
+
+main > h1 .first {
+
+    color: #4A3A20;
+
+}
+
+
+main > h1 .last {
+
+    color: #CA9906;
+
+}
+
+
+/* =========================
+   BIOGRAPHIES GRID
+========================= */
+
+.biographies-grid {
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 0 70px 80px;
+
+    box-sizing: border-box;
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 30px;
+
+    justify-items: center;
+}
+
+
+/* =========================
+   BIOGRAPHY CARD
+========================= */
+
+.biography-card {
+
+    width: 100%;
+
+    aspect-ratio: 3 / 4;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background: #eee;
+
+    box-shadow:
+        0 6px 20px rgba(74, 58, 32, 0.18);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+
+    animation:
+        biography-floating 4s ease-in-out infinite;
+}
+
+
+/* =========================
+   FLOATING ANIMATION
+========================= */
+
+@keyframes biography-floating {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================
+   CARD HOVER
+========================= */
+
+.biography-card:hover {
+
+    transform: scale(1.03);
+
+    box-shadow:
+        0 10px 28px rgba(74, 58, 32, 0.25);
+}
+
+
+/* =========================
+   CARD LINK
+========================= */
+
+.biography-card a {
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+
+    color: inherit;
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   CARD IMAGE
+========================= */
+
+.biography-card img {
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+/* =========================
+   GOLDEN FADE
+========================= */
+
+.biography-card a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 58%;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(238, 223, 177, 0.98),
+            rgba(238, 223, 177, 0.70),
+            rgba(238, 223, 177, 0)
+        );
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   BIOGRAPHY NAME
+========================= */
+
+.biography-name {
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 2;
+
+    padding: 22px 15px 8px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    color: #3F301A;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    line-height: 1.4;
+}
+
+
+/* =========================
+   MEDIUM SCREEN
+========================= */
+
+@media (max-width: 1100px) {
+
+
+    .biographies-grid {
+
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+    .biography-name {
+
+        padding: 18px 8px 7px;
+
+        font-size: 14px;
+
+    }
+
+
+}
+
+
+/* =========================
+   SMALL SCREEN
+========================= */
+
+@media (max-width: 700px) {
+
+    main > h1 {
+
+        max-width: 100%;
+
+        margin: 0 auto 30px;
+
+        padding: 0 20px;
+
+        font-size: 27px;
+
+    }
+
+
+    .biographies-grid {
+
+        max-width: 100%;
+
+        padding: 0 20px 60px;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 15px;
+
+    }
+
+
+    .biography-card {
+
+        border-radius: 14px;
+
+    }
+
+
+    .biography-name {
+
+        padding: 18px 8px 7px;
+
+        font-size: 11px;
+
+    }
+
+}
+
+
+
