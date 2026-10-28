@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Physical Quantities, Units and Dimensions - MCQ | StudyHub</title>
+
+    <link rel="stylesheet" href="../../../material.css">
+
+</head>
+
+<body>
+
+    <!-- Mobile Sidebar Toggle -->
+    <button class="sidebar-toggle" id="sidebarToggle"
+            aria-label="Toggle subjects menu">
+        ☰
+    </button>
+
+    <div class="page-layout">
+
+        <!-- LEFT SIDEBAR -->
+        <aside class="sidebar" id="sidebar">
+
+            <a href="../../../../index.html" class="site-logo">
+                <span class="logo-icon">SH</span>
+                <span>Study<span class="logo-highlight">Hub</span></span>
+            </a>
+
+            <div class="sidebar-heading">SUBJECTS</div>
+
+            <nav class="subject-nav">
+
+                <a href="../../../../subjects/bangla.html"
+                   class="subject-link">
+                    <span class="subject-icon">অ</span>
+                    <span>Bangla</span>
+                </a>
+
+                <a href="../../../../subjects/english.html"
+                   class="subject-link">
+                    <span class="subject-icon">En</span>
+                    <span>English</span>
+                </a>
+
+                <a href="../../../../subjects/physics1.html"
+                   class="subject-link active">
+                    <span class="subject-icon">⚛</span>
+                    <span>Physics 1st Paper</span>
+                </a>
+
+                <a href="../../../../subjects/physics2.html"
+                   class="subject-link">
+                    <span class="subject-icon">⚡</span>
+                    <span>Physics 2nd Paper</span>
+                </a>
+
+                <a href="../../../../subjects/chemistry1.html"
+                   class="subject-link">
+                    <span class="subject-icon">🧪</span>
+                    <span>Chemistry 1st Paper</span>
+                </a>
+
+                <a href="../../../../subjects/chemistry2.html"
+                   class="subject-link">
+                    <span class="subject-icon">🔬</span>
+                    <span>Chemistry 2nd Paper</span>
+                </a>
+
+                <a href="../../../../subjects/higher-math1.html"
+                   class="subject-link">
+                    <span class="subject-icon">📐</span>
+                    <span>Higher Math 1st Paper</span>
+                </a>
+
+                <a href="../../../../subjects/higher-math2.html"
+                   class="subject-link">
+                    <span class="subject-icon">∑</span>
+                    <span>Higher Math 2nd Paper</span>
+                </a>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+                <span class="sidebar-bottom-icon">📚</span>
+                <div>
+                    <strong>StudyHub</strong>
+                    <small>Learn at your own pace</small>
+                </div>
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- TOP HEADER -->
+            <header class="top-header">
+
+                <div class="breadcrumb">
+                    <a href="../../../../index.html">Home</a>
+                    <span>/</span>
+                    <a href="../../../../subjects/physics1.html">
+                        Physics 1st Paper
+                    </a>
+                    <span>/</span>
+                    <span>Chapter 1</span>
+                </div>
+
+                <span class="header-label">HSC Science</span>
+
+            </header>
+
+
+            <!-- CHAPTER TOPIC NAVIGATION -->
+            <section class="chapter-navigation">
+
+                <div class="chapter-heading">
+                    <span class="chapter-label">CHAPTER 01</span>
+                    <h1>Physical World and Measurement</h1>
+                    <p>Select a topic to explore its study materials.</p>
+                </div>
+
+                <nav class="topic-tabs">
+
+                    <a href="notes.html" class="topic-tab">
+                        <span class="tab-number">01</span>
+                        <span>Physical Quantities, Units and Dimensions</span>
+                    </a>
+
+                    <a href="../topic-2/notes.html" class="topic-tab">
+                        <span class="tab-number">02</span>
+                        <span>Errors in Measurement</span>
+                    </a>
+
+                    <a href="../topic-3/notes.html" class="topic-tab">
+                        <span class="tab-number">03</span>
+                        <span>Measuring Instruments</span>
+                    </a>
+
+                </nav>
+
+            </section>
+
+
+            <!-- TOPIC TITLE -->
+            <section class="topic-heading">
+
+                <div class="topic-heading-text">
+                    <div class="eyebrow">TOPIC 01 · MCQ PRACTICE</div>
+
+                    <h2>Physical Quantities, Units and Dimensions</h2>
+
+                    <p>
+                        Test your knowledge with interactive multiple-choice
+                        questions. Choose an option or reveal the answer.
+                    </p>
+                </div>
+
+                <div class="topic-badge">☷ MCQ</div>
+
+            </section>
+
+
+            <!-- NOTES / WRITTEN / MCQ SWITCHER -->
+            <nav class="material-tabs" aria-label="Study material types">
+
+                <a href="notes.html" class="material-tab">
+                    <span>▤</span> Notes
+                </a>
+
+                <a href="written.html" class="material-tab">
+                    <span>✎</span> Written
+                </a>
+
+                <a href="mcq.html" class="material-tab active">
+                    <span>☷</span> MCQ
+                </a>
+
+            </nav>
+
+
+            <!-- MCQ CONTENT -->
+            <article class="notes-container">
+
+                <div class="notes-toolbar">
+                    <div>
+                        <span class="content-label">PRACTICE TEST</span>
+                        <h3>Multiple-Choice Questions</h3>
+                    </div>
+                </div>
+
+                <div class="mcq-instructions">
+                    <strong>How to practise</strong>
+                    <br>
+                    Choose one of the four options. A wrong answer turns red
+                    and plays a sound. A correct answer turns green without
+                    sound. You can also reveal the correct answer whenever
+                    you want.
+                </div>
+
+                <div class="mcq-toolbar">
+                    <div class="mcq-score" id="mcqScore" aria-live="polite">
+                        Correct: 0 / 8
+                    </div>
+
+                    <button type="button" class="reset-button" id="resetQuiz">
+                        ↻ Try Again
+                    </button>
+                </div>
+
+
+                <div class="mcq-list" id="mcqList">
+
+                    <!-- QUESTION 1 -->
+                    <section class="mcq-card" data-answer="b">
+
+                        <div class="mcq-meta">
+                            <span class="mcq-number">QUESTION 01</span>
+                            <span class="mcq-badge">Basic</span>
+                        </div>
+
+                        <h3 class="mcq-question">
+                            Which of the following is a fundamental physical
+                            quantity?
+                        </h3>
+
+                        <div class="mcq-options">
+
+                            <button class="mcq-option" data-option="a">
+                                <span class="option-letter">A</span>
+                                <span>Velocity</span>
+                            </button>
+
+                            <button class="mcq-option" data-option="b">
+                                <span class="option-letter">B</span>
+                                <span>Mass</span>
+                            </button>
+
+                            <button class="mcq-option" data-option="c">
+                                <span class="option-letter">C</span>
+                                <span>Force</span>
+                            </button>
+
+                            <button class="mcq-option" data-option="d">
+                                <span class="option-letter">D</span>
+                                <span>Acceleration</span>
+                            </button>
+
+                        </div>
+
+                        <div class="mcq-feedback" aria-live="polite"></div>
+
+                        <button type="button" class="answer-toggle">
+                            Show Answer
+                        </button>
+
+                        <div class="answer-reveal">
+                            <strong>Correct Answer: B — Mass</strong>
+                            <p>
+                                Mass is a fundamental quantity. Velocity,
+                                force and acceleration are derived quantities.
+                            </p>
+                        </div>
+
+                    </section>
+
+
+                    <!-- QUESTION 2 -->
+                    <section class="mcq-card" data-answer="c">
+
+                        <div class="mcq-meta">
+                            <span class="mcq-number">QUESTION 02</span>
+                            <span class="mcq-badge">Basic</span>
+                        </div>
+
+                        <h3 class="mcq-question">
+                            What is the SI unit of length?
+                        </h3>
+
+                        <div class="mcq-options">
+
+                            <button class="mcq-option" data-option="a">
+                                <span class="option-letter">A</span>
+                                <span>Kilogram</span>
+                            </button>
+
+                            <button class="mcq-option" data-option="b">
+                                <span class="option-letter">B</span>
+                                <span>Second</span>
+                            </button>
+
+                            <button class="mcq-option" data-option="c">
+                                <span class="option-letter">C</span>
+                                <span>Metre</span>
+                            </button>
+
+                            <button class="mcq-option" data-option="d">
+                                <span class="option-letter">D</span>
+                                <span>Newton</span>
+                            </button>
+
+                        </div>
+
+                        <div class="mcq-feedback" aria-live="polite"></div>
+
+                        <button type="button" class="answer-toggle">
+                            Show Answer
+                        </button>
+
+                        <div class="answer-reveal">
+                            <strong>Correct Answer: C — Metre</strong>
+                            <p>
+                                The metre (m) is the SI base unit of length.
+                            </p>
+                        </div>
+
+                    </section>
+
+
+
+
+
+
+
+
+
+
+                <!-- BOTTOM NAVIGATION -->
+                <div class="notes-footer">
+
+                    <div>
+                        <span class="content-label">CONTINUE LEARNING</span>
+                        <h3>Review this topic</h3>
+                    </div>
+
+                    <a href="notes.html" class="next-button">
+                        Read Notes <span>→</span>
+                    </a>
+
+                    <a href="written.html" class="next-button">
+                        Written Questions <span>→</span>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- FOOTER -->
+            <footer class="page-footer">
+                <p>© StudyHub · Learn, Practise and Improve</p>
+            </footer>
+
+        </main>
+
+    </div>
+
+
+    <!-- COMMON JAVASCRIPT -->
+    <script src="../../../material.js" defer></script>
+
+</body>
+</html>

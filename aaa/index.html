@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My personal study space for subject-wise notes, written questions, answers and MCQs.">
+    <title>StudyHub | My Question Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">SH</span>
+            <span class="logo-high">Study<span class="logo-highlight">Hub</span></span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="#subjects">Subjects</a>
+            <a href="#quick-access">Study Materials</a>
+        </nav>
+
+        <a href="#subjects" class="header-button">Start Studying ↗</a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+            ☰
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="hero-label">
+                    ✦ YOUR PERSONAL STUDY SPACE
+                </span>
+
+                <h1>
+                    Learn. Practice.<br>
+                    <span>Revise.</span>
+                </h1>
+
+                <p>
+                    তোমার সব Notes, Questions, Answers ও MCQ
+                    গুছিয়ে রাখো এক জায়গায়।
+                </p>
+
+                <div class="search-box">
+                    <span class="search-icon">⌕</span>
+                    <input
+                        type="search"
+                        id="subjectSearch"
+                        placeholder="Search subject..."
+                        aria-label="Search subjects"
+                    >
+                    <button type="button" id="searchButton">
+                        Search
+                    </button>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#subjects" class="primary-button">
+                        Browse Subjects <span>→</span>
+                    </a>
+                    <a href="#quick-access" class="secondary-button">
+                        Explore Materials
+                    </a>
+                </div>
+
+                <div class="hero-note">
+                    <span class="status-dot"></span>
+                    Your notes. Your questions. Your study space.
+                </div>
+            </div>
+
+            <div class="hero-visual" aria-hidden="true">
+                <div class="visual-glow"></div>
+
+                <div class="book-illustration">
+                    <div class="book-top">STUDY NOTES</div>
+                    <div class="book-line"></div>
+                    <div class="book-line short"></div>
+                    <div class="book-line"></div>
+                    <div class="book-line medium"></div>
+                    <div class="book-mark">✓</div>
+                </div>
+
+                <div class="floating-card card-notes">
+                    <span class="float-icon blue">▤</span>
+                    <div>
+                        <strong>My Notes</strong>
+                        <small>Topic-wise learning</small>
+                    </div>
+                </div>
+
+                <div class="floating-card card-mcq">
+                    <span class="float-icon green">✓</span>
+                    <div>
+                        <strong>MCQ Collection</strong>
+                        <small>Practice & revise</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subjects -->
+        <section class="subjects-section" id="subjects">
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">EXPLORE YOUR LIBRARY</span>
+                    <h2>My Subjects</h2>
+                    <p>Choose a subject to explore its units and topics.</p>
+                </div>
+
+                <span class="subject-count" id="subjectCount">
+                    7 Subjects
+                </span>
+            </div>
+
+            <div class="subject-grid" id="subjectGrid">
+
+                <a href="subjects/bangla.html"
+                   class="subject-card"
+                   data-search="bangla বাংলা language literature">
+                    <div class="subject-icon icon-bangla">অ</div>
+                    <div class="subject-info">
+                        <h3>Bangla</h3>
+                        <p>বাংলা ভাষা ও সাহিত্য</p>
+                    </div>
+                    <span class="card-arrow">↗</span>
+                </a>
+
+                <a href="subjects/english.html"
+                   class="subject-card"
+                   data-search="english ইংরেজি grammar literature">
+                    <div class="subject-icon icon-english">En</div>
+                    <div class="subject-info">
+                        <h3>English</h3>
+                        <p>Grammar & Literature</p>
+                    </div>
+                    <span class="card-arrow">↗</span>
+                </a>
+
+
+                <a href="subjects/physics1.html"
+                   class="subject-card"
+                   data-search="physics পদার্থবিজ্ঞান">
+                    <div class="subject-icon icon-physics">⚛</div>
+                    <div class="subject-info">
+                        <h3>Physics 1st Paper</h3>
+                        <p>Concepts & Numericals</p>
+                    </div>
+                    <span class="card-arrow">↗</span>
+                </a>
+
+                <a href="subjects/physics2.html"
+                   class="subject-card"
+                   data-search="physics পদার্থবিজ্ঞান">
+                    <div class="subject-icon icon-physics">⚛</div>
+                    <div class="subject-info">
+                        <h3>Physics 2nd Paper</h3>
+                        <p>Concepts & Numericals</p>
+                    </div>
+                    <span class="card-arrow">↗</span>
+                </a>
+
+
+                 <a href="subjects/chemistry1.html"
+                   class="subject-card"
+                   data-search="chemistry রসায়ন">
+                    <div class="subject-icon icon-chemistry">⚗</div>
+                    <div class="subject-info">
+                        <h3>Chemistry 1st Paper</h3>
+                        <p>Reactions & Concepts</p>
+                    </div>
+                    <span class="card-arrow">↗</span>
+                </a>               
+
+
+                <a href="subjects/chemistry2.html"
+                   class="subject-card"
+                   data-search="chemistry রসায়ন">
+                    <div class="subject-icon icon-chemistry">⚗</div>
+                    <div class="subject-info">
+                        <h3>Chemistry 2nd Paper</h3>
+                        <p>Reactions & Concepts</p>
+                    </div>
+                    <span class="card-arrow">↗</span>
+                </a>
+
+                <a href="subjects/higher-math1.html"
+                   class="subject-card"
+                   data-search="higher math higher mathematics উচ্চতর গণিত">
+                    <div class="subject-icon icon-math">∑</div>
+                    <div class="subject-info">
+                        <h3>Higher Math 1st Paper</h3>
+                        <p>Formulas & Problems</p>
+                    </div>
+                    <span class="card-arrow">↗</span>
+                </a>
+
+                <a href="subjects/higher-math2.html"
+                   class="subject-card"
+                   data-search="higher math higher mathematics উচ্চতর গণিত">
+                    <div class="subject-icon icon-math">∑</div>
+                    <div class="subject-info">
+                        <h3>Higher Math 2nd Paper</h3>
+                        <p>Formulas & Problems</p>
+                    </div>
+                    <span class="card-arrow">↗</span>
+                </a>
+
+            </div>
+
+            <p class="no-results" id="noResults" hidden>
+                No matching subject found. Try another search.
+            </p>
+        </section>
+
+        <!-- Quick Access -->
+        <section class="quick-section" id="quick-access">
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">STUDY YOUR WAY</span>
+                    <h2>Quick Access</h2>
+                    <p>Choose the type of study material you need.</p>
+                </div>
+            </div>
+
+            <div class="quick-grid">
+                <a href="#subjects" class="quick-card">
+                    <div class="quick-icon quick-blue">▤</div>
+                    <div>
+                        <h3>My Notes</h3>
+                        <p>Topic-wise notes and explanations</p>
+                    </div>
+                    <span class="quick-arrow">→</span>
+                </a>
+
+                <a href="#subjects" class="quick-card">
+                    <div class="quick-icon quick-green">✎</div>
+                    <div>
+                        <h3>Written Questions</h3>
+                        <p>Creative, short questions and answers</p>
+                    </div>
+                    <span class="quick-arrow">→</span>
+                </a>
+
+                <a href="#subjects" class="quick-card">
+                    <div class="quick-icon quick-purple">☷</div>
+                    <div>
+                        <h3>MCQ Collection</h3>
+                        <p>Topic-wise multiple-choice questions</p>
+                    </div>
+                    <span class="quick-arrow">→</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="index.html" class="logo footer-logo">
+            <span class="logo-icon">SH</span>
+            <span>Study<span class="logo-highlight">Hub</span></span>
+        </a>
+
+        <p>My personal learning space.</p>
+
+        <span class="copyright">
+            © <span id="currentYear"></span> StudyHub. All rights reserved.
+        </span>
+    </footer>
+
+    <!-- Small interactions -->
+    <script src="main.js" defer></script>
+    
+</body>
+</html>
