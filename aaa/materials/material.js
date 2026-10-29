@@ -183,3 +183,24 @@ document.addEventListener("DOMContentLoaded", function () {
     updateScore();
 
 });
+// Automatically center the selected topic
+document.addEventListener("DOMContentLoaded", function () {
+
+    const topicTabs = document.querySelector(".topic-tabs");
+    if (!topicTabs) return;
+
+    const activeTopic = topicTabs.querySelector(".topic-tab.active");
+    if (!activeTopic) return;
+
+    const targetScroll =
+        activeTopic.offsetLeft -
+        topicTabs.offsetLeft -
+        (topicTabs.clientWidth / 2) +
+        (activeTopic.offsetWidth / 2);
+
+    topicTabs.scrollTo({
+        left: targetScroll,
+        behavior: "instant"
+    });
+
+});
